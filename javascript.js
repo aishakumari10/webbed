@@ -12,14 +12,29 @@ console.log(b)
 
 //console.log(a)
 
-let a=237382
-var b=3764
+///let a=237382
+///var b=3764
 
 
-console.log(a)
-console.log(b)
-function print(){
-    console.log("inside fn")
-}
+///console.log(a)
+///console.log(b)
+///function print(){
+///    console.log("inside fn")
+///}
 
-print()
+///print()
+
+//function first(){
+//   second()
+//}
+//function second(){
+//    third()
+//}
+//function third(){
+//    console.trace()
+//}
+//first() 
+
+console.log("first line")
+setTimeout(() => {console.log("after 2 sec")},2000);
+console.log("second line")

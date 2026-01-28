@@ -8,6 +8,6 @@ n=int(inpu('enter a number: '))
 if n>1:
     if n//2==0:
         print("it is a prime number.")
-        break
-    else:
-        print("it is not a prime number.")
+    break
+else:
+    print("it is not a prime number.")
