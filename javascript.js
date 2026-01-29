@@ -59,6 +59,10 @@ const name=document.querySelector("#name")
 const btn=document.querySelector(".btn")
 const list=document.querySelector(".list")
 btn.addEventListener('click',() => {
+    if (name.value===""){
+        alert("Please enter a name")
+        return
+    }
     const li=document.createElement('li')
     const dlt=document.createElement('button')
     li.innerText=name.value;
@@ -71,3 +75,4 @@ btn.addEventListener('click',() => {
     li.appendChild(dlt)
     name.value=" "
 })
+
