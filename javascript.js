@@ -8,7 +8,7 @@
 ///button.addEventListener('click',()=>{console.log("button")},true)
 
 //console.log()
-console.log(b)
+//console.log(b)
 
 //console.log(a)
 
@@ -35,6 +35,39 @@ console.log(b)
 //}
 //first() 
 
-console.log("first line")
-setTimeout(() => {console.log("after 2 sec")},2000);
-console.log("second line")
+//console.log("first line")
+//setTimeout(() => {console.log("after 2 sec")},2000);
+//console.log("second line")
+
+//setTimeout(() => {
+//    alert("line after 2 sec")
+//}, 2*1000);
+
+
+//setInterval(() => {console.log("setinterval")}, 2000);
+//const timeoutID=setTimeout(() => {clearInterval(timerID)},10000)
+// clearTimeout(timeoutId)
+
+//console.log("before timeout")
+//setTimeout(() => {
+//    console.log("settimeout")
+//}, 0);
+//console.log("after timeout")
+
+
+const name=document.querySelector("#name")
+const btn=document.querySelector(".btn")
+const list=document.querySelector(".list")
+btn.addEventListener('click',() => {
+    const li=document.createElement('li')
+    const dlt=document.createElement('button')
+    li.innerText=name.value;
+    console.log(name.value)
+    dlt.innerText="delete"
+    dlt.addEventListener('click',() => {
+        list.removeChild(li)
+    })
+    list.appendChild(li)
+    li.appendChild(dlt)
+    name.value=" "
+})
