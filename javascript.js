@@ -55,24 +55,46 @@
 //console.log("after timeout")
 
 
-const name=document.querySelector("#name")
-const btn=document.querySelector(".btn")
-const list=document.querySelector(".list")
-btn.addEventListener('click',() => {
-    if (name.value===""){
-        alert("Please enter a name")
-        return
-    }
-    const li=document.createElement('li')
-    const dlt=document.createElement('button')
-    li.innerText=name.value;
-    console.log(name.value)
-    dlt.innerText="delete"
-    dlt.addEventListener('click',() => {
-        list.removeChild(li)
-    })
-    list.appendChild(li)
-    li.appendChild(dlt)
-    name.value=" "
-})
+//const name=document.querySelector("#name")
+//const btn=document.querySelector(".btn")
+//const list=document.querySelector(".list")
+//btn.addEventListener('click',() => {
+//    if (name.value===""){
+//        alert("Please enter a name")
+//        return
+//    }
+//    const li=document.createElement('li')
+//    const dlt=document.createElement('button')
+//
+//    li.innerText=name.value;
+//    console.log(name.value)
+//    dlt.innerText="delete"
+//    dlt.addEventListener('click',() => {
+//        list.removeChild(li)
+//    })
+//    list.appendChild(li)
+//    li.appendChild(dlt)
+//    name.value=" "
+//})
 
+
+//function print(num){
+//    console.log("inside print")
+//    num()
+//}
+//function callback(){  // callback function
+//    console.log("inside callback")
+//}
+//print(callback)
+
+function print(num){
+    setTimeout(() => {
+        console.log("inside print")
+        num()
+    }, 2000); 
+}  
+
+function callback(){  // callback function
+    console.log("inside callback")
+} 
+print(callback)

@@ -1,8 +1,7 @@
 .btn {
-    background-color: red;
-    border: lightsalmon;
+    background-color: rgb(221, 151, 151);
+    border: rgb(170, 96, 67);
     color: rgb(71, 102, 138);
-    padding: 15px 32px;
     text-align: center;
     text-decoration: rgb(230, 131, 61);
     display: inline-block;
