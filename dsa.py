@@ -1,27 +1,22 @@
-l1=[0,2,0,3,4,0,7,8,0]
-#all the zeros to be shifted at the end of the list and the non zero elements 
-#to be shifted at start 
-i=0
-l2=[]
-for i in l1:
-    if i !=0:
-        l2.append(i)
+# l1=[3,4,5,6,7,12,0,15,8]
+# maximum=l1[0]
+# for i in l1:
+#     if i>maximum:
+#         maximum=i
+# print("the maximum number in the list is:",maximum)
 
-for i in l1:
-    if i==0:
-        l2.append(i)
+import math
+l1=[3,4,5,6,7,12,0,15,8]
+first_max = -math.inf
+second_max = -math.inf
 
-print(l2)
+for num in l1:
+    if num > first_max:
+        second_max = first_max
+        first_max = num
+    elif first_max > num > second_max:
+        second_max = num
 
-#second method
-i=0
-for n in l1:
-    if n !=0:
-        l1[i]=n
-        i+=1
+print("Second maximum element:", second_max)
 
-while i<len(l1):
-    l1[i]=0
-    i+=1
 
-#third method 

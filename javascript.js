@@ -87,14 +87,28 @@
 //}
 //print(callback)
 
-function print(num){
-    setTimeout(() => {
-        console.log("inside print")
-        num()
-    }, 2000); 
-}  
+//function print(num){
+//    setTimeout(() => {
+//        console.log("inside print")
+//        num()
+// //    }, 2000); 
+// }  
 
-function callback(){  // callback function
-    console.log("inside callback")
-} 
-print(callback)
+// function callback(){  // callback function
+//     console.log("inside callback")
+// } 
+// print(callback)
+
+console.log("starting homework....")
+setTimeout(() => {
+    console.log("homework done")
+    console.log("starting dinner")
+    setTimeout(() => {
+        console.log("dinner done")
+        console.log("getting ready to go out....")
+        setTimeout(() => {
+        
+    }, timeout);
+
+}, timeout);
+})
