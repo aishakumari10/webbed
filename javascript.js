@@ -99,16 +99,39 @@
 // } 
 // print(callback)
 
-console.log("starting homework....")
-setTimeout(() => {
-    console.log("homework done")
-    console.log("starting dinner")
-    setTimeout(() => {
-        console.log("dinner done")
-        console.log("getting ready to go out....")
-        setTimeout(() => {
-        
-    }, timeout);
+// console.log("starting homework....")
+// setTimeout(() => {
+//     console.log("homework done")
+//     console.log("starting dinner")
+//     setTimeout(() => {
+//         console.log("dinner done")
+//         console.log("getting ready to go out....")
+//         setTimeout(() => {
+//             console.log("going to play ground")
+//         }, 1000) //after dinner
+//     }, 1500) //dinner time
+// }, 2000) //homework time 
 
-}, timeout);
-})
+// function finishhomework(callback){
+//     console.log("starting homework....");
+//     setTimeout(() => {
+//         console.log("homework done");
+//         callback();
+//     }, 2000);
+// }
+
+// function eatdinner(callback){
+//     console.log("starting dinner....");
+//     setTimeout(() => {
+//         console.log("dinner done");
+//         callback();
+//     }, 1500);
+// }
+// function gotoplayground(){
+//     console.log("going to playground");
+// }
+// finishhomework(() => {
+//     eatdinner(() => {
+//         gotoplayground();
+//     });
+// });
